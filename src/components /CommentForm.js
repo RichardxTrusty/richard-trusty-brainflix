@@ -5,7 +5,10 @@ function CommentForm() {
       <label className="comment__label" htmlFor="text">
         JOIN THE CONVERSATION
       </label>
-      <textarea name="" id="text" placeholder="Add a new comment"></textarea>
+      <textarea
+        className="comments__input"
+        id="text"
+        placeholder="Add a new comment"></textarea>
       <button className="comments__button">COMMENT</button>
     </form>
   );
