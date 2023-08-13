@@ -7,7 +7,7 @@ function VideoInfo(props) {
       <h1 className="info__title">{props.content.title}</h1>
       <div className="info__container">
         <div className="info__user">
-          <p className="info__user-content">By</p>
+          <p className="info__user-content">By {props.content.channel}</p>
           <p className="info__user-date"></p>
         </div>
         <div className="info__social">
@@ -25,6 +25,7 @@ function VideoInfo(props) {
               src={likes}
               alt="Likes Count Icon"
             />
+            {props.content.likes}
           </p>
         </div>
       </div>
