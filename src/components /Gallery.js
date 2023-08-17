@@ -1,22 +1,27 @@
+/* Loop or iterate over Gallery data and create component of gallery videos 
+- Use props to pass down video array from videos.json */
+
+// 1.)Gallery Section - to display a list of videos
+// 2.)Iterate over a list of gallery videos assocaited - Will be requred to create a loop
+// 3.)Show the gallery Component
+
 function Gallery(props) {
   return (
-    <div className="videoList">
-      <h5 className="videoList__header">NEXT VIDEO</h5>
+    <div className="gallery">
+      <h5 className="gallery-header">NEXT VIDEO</h5>
       {props.list.map((video) => {
         if (video.title === "Become A Travel Pro In One Easy Lesson") {
           return (
-            <div key={video.id} className="videoList-inner">
-              <div className="videoList-wrapper">
+            <div key={video.id} className="video">
+              <div className="video___thumbnail-container">
                 <img
-                  className="videoList__thumbnail--large"
+                  className="video__thumbnail--img"
                   src={video.image}
-                  alt="images as thumbnails for the videos"></img>
+                  alt="Thumbnail clip of video"></img>
               </div>
-              <div className="videoList-inner-block">
-                <h4 className="videoList-inner-block__title">{video.title}</h4>
-                <p className="videoList-inner-block__channel">
-                  {video.channel}
-                </p>
+              <div className="video__title-container">
+                <h4 className="video__title--text">{video.title}</h4>
+                <p className="video__title--channel">{video.channel}</p>
               </div>
             </div>
           );
@@ -24,39 +29,31 @@ function Gallery(props) {
           video.title === "Les Houches The Hidden Gem Of The Chamonix"
         ) {
           return (
-            <div key={video.id} className="videoList-inner">
-              <div className="videoList-wrapper">
+            <div key={video.id} className="video">
+              <div className="video___thumbnail-container">
                 <img
-                  className="videoList__thumbnail--rotate"
+                  className="video__thumbnail--img"
                   src={video.image}
-                  alt="images as thumbnails for the videos"></img>
+                  alt="Thumbnail clip of video"></img>
               </div>
-              <div className="videoList-inner-block">
-                <h4 className="videoList-inner-block__title">
-                  {video.title} &nbsp;&nbsp;
-                </h4>
-                <p className="videoList-inner-block__channel">
-                  {video.channel}
-                </p>
+              <div className="video__title-container">
+                <h4 className="video__title--text">{video.title}</h4>
+                <p className="video__title--channel">{video.channel}</p>
               </div>
             </div>
           );
         } else {
           return (
-            <div key={video.id} className="videoList-inner">
-              <div className="videoList-wrapper">
+            <div key={video.id} className="video">
+              <div className="video___thumbnail-container">
                 <img
-                  className="videoList__thumbnail"
+                  className="video__thumbnail--img"
                   src={video.image}
-                  alt="images as thumbnails for the videos"></img>
+                  alt="Thumbnail clip of video"></img>
               </div>
-              <div className="videoList-inner-block">
-                <h4 className="videoList-inner-block__title">
-                  {video.title} &nbsp;&nbsp;
-                </h4>
-                <p className="videoList-inner-block__channel">
-                  {video.channel}
-                </p>
+              <div className="video__title-container">
+                <h4 className="video__title--text">{video.title}</h4>
+                <p className="video__title--channel">{video.channel}</p>
               </div>
             </div>
           );
