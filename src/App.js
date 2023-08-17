@@ -25,7 +25,7 @@ class App extends Component {
         <Video content={this.state.selectedData} />
         <VideoInfo content={this.state.selectedData} />
         <CommentForm />
-        <Comments />
+        <Comments comments={this.state.selectedData.comments} />
         <Gallery list={this.state.list} selectedId={this.state.selectedId} />
       </div>
     );
