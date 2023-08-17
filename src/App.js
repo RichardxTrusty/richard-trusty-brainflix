@@ -2,6 +2,7 @@ import Header from "./components /Header";
 import Video from "./components /Video";
 import VideoInfo from "./components /VideoInfo";
 import CommentForm from "./components /CommentForm";
+import Comments from "./components /Comments";
 import data from "./data/video-details.json";
 import list from "./data/videos.json";
 
@@ -21,6 +22,7 @@ class App extends Component {
         <Video content={this.state.selectedData} />
         <VideoInfo content={this.state.selectedData} />
         <CommentForm />
+        <Comments />
       </div>
     );
   }
