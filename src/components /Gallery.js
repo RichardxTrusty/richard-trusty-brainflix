@@ -12,7 +12,10 @@ function Gallery(props) {
       {props.list.map((video) => {
         if (video.title === "Become A Travel Pro In One Easy Lesson") {
           return (
-            <div key={video.id} className="video">
+            <div
+              key={video.id}
+              onClick={() => props.clickHandeler(video.id)}
+              className="video">
               <div className="video___thumbnail-container">
                 <img
                   className="video__thumbnail--img"
@@ -29,7 +32,10 @@ function Gallery(props) {
           video.title === "Les Houches The Hidden Gem Of The Chamonix"
         ) {
           return (
-            <div key={video.id} className="video">
+            <div
+              key={video.id}
+              onClick={() => props.clickHandeler(video.id)}
+              className="video">
               <div className="video___thumbnail-container">
                 <img
                   className="video__thumbnail--img"
@@ -44,7 +50,10 @@ function Gallery(props) {
           );
         } else {
           return (
-            <div key={video.id} className="video">
+            <div
+              key={video.id}
+              onClick={() => props.clickhandler(video.id)}
+              className="video">
               <div className="video___thumbnail-container">
                 <img
                   className="video__thumbnail--img"
