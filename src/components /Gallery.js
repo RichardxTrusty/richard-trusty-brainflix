@@ -4,6 +4,7 @@
 // 1.)Gallery Section - to display a list of videos
 // 2.)Iterate over a list of gallery videos assocaited - Will be requred to create a loop
 // 3.)Show the gallery Component
+import React from "react";
 
 function Gallery(props) {
   return (
@@ -12,7 +13,10 @@ function Gallery(props) {
       {props.list.map((video) => {
         if (video.title === "Become A Travel Pro In One Easy Lesson") {
           return (
-            <div key={video.id} className="video">
+            <div
+              key={video.id}
+              onClick={() => props.clickHandler(video.id)}
+              className="video">
               <div className="video___thumbnail-container">
                 <img
                   className="video__thumbnail--img"
@@ -29,7 +33,10 @@ function Gallery(props) {
           video.title === "Les Houches The Hidden Gem Of The Chamonix"
         ) {
           return (
-            <div key={video.id} className="video">
+            <div
+              key={video.id}
+              onClick={() => props.clickHandler(video.id)}
+              className="video">
               <div className="video___thumbnail-container">
                 <img
                   className="video__thumbnail--img"
@@ -44,7 +51,10 @@ function Gallery(props) {
           );
         } else {
           return (
-            <div key={video.id} className="video">
+            <div
+              key={video.id}
+              onClick={() => props.clickHandler(video.id)}
+              className="video">
               <div className="video___thumbnail-container">
                 <img
                   className="video__thumbnail--img"
@@ -62,5 +72,4 @@ function Gallery(props) {
     </div>
   );
 }
-
 export default Gallery;
