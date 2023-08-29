@@ -1,0 +1,29 @@
+@use "./partials/mixins" as *;
+@use "./partials/typogragrphy" as *;
+@use "./partials/variable" as *;
+
+* {
+  box-sizing: border-box;
+  font-family: "AvenirNextRegular";
+}
+
+button {
+  background-color: $BrainFlix-Blue;
+  color: $White;
+  border-radius: 4px;
+  border: none;
+  &:hover {
+    background-color: $BrainFlix-DarkBlue;
+  }
+}
+
+.halfPage {
+  @include desktop {
+    display: flex;
+  }
+  &-left {
+    @include desktop {
+      width: 60%;
+    }
+  }
+}

@@ -4,6 +4,7 @@
 // 1.)Gallery Section - to display a list of videos
 // 2.)Iterate over a list of gallery videos assocaited - Will be requred to create a loop
 // 3.)Show the gallery Component
+import React from "react";
 
 function Gallery(props) {
   return (
@@ -14,7 +15,7 @@ function Gallery(props) {
           return (
             <div
               key={video.id}
-              onClick={() => props.clickHandeler(video.id)}
+              onClick={() => props.clickHandler(video.id)}
               className="video">
               <div className="video___thumbnail-container">
                 <img
@@ -34,7 +35,7 @@ function Gallery(props) {
           return (
             <div
               key={video.id}
-              onClick={() => props.clickHandeler(video.id)}
+              onClick={() => props.clickHandler(video.id)}
               className="video">
               <div className="video___thumbnail-container">
                 <img
@@ -52,7 +53,7 @@ function Gallery(props) {
           return (
             <div
               key={video.id}
-              onClick={() => props.clickhandler(video.id)}
+              onClick={() => props.clickHandler(video.id)}
               className="video">
               <div className="video___thumbnail-container">
                 <img
@@ -71,5 +72,4 @@ function Gallery(props) {
     </div>
   );
 }
-
 export default Gallery;

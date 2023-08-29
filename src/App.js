@@ -35,14 +35,19 @@ function App() {
     <div className="App">
       <Header defaultPrevent />
       <Video content={appState.selectedData} />
-      <VideoInfo content={appState.selectedData} />
-      <CommentForm />
-      <Comments comments={appState.selectedData.comments} />
-      <Gallery
-        list={appState.list}
-        selectedId={appState.selectedId}
-        clickhandler={clickHandler}
-      />
+      <div>
+        <div>
+          <VideoInfo content={appState.selectedData} />
+          <CommentForm />
+          <Comments comments={appState.selectedData.comments} />
+        </div>
+
+        <Gallery
+          list={appState.list}
+          selectedId={appState.selectedId}
+          clickhandler={clickHandler}
+        />
+      </div>
     </div>
   );
 }
