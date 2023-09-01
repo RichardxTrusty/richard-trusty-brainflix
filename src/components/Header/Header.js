@@ -1,12 +1,13 @@
-import Logo from "../assets/Logo/BrainFlix-logo.svg";
-import Search from "../assets/Icons/search.svg";
-import Upload from "../assets/Icons/upload.svg";
+import Logo from "../../assets/Logo/BrainFlix-logo.svg";
+import Search from "../../assets/Icons/search.svg";
+import Upload from "../../assets/Icons/upload.svg";
+import "./Header.scss";
 
 function Header(props) {
   return (
     <header className="header">
       <img className="header__logo" src={Logo} alt="brainflix logo"></img>
-      <form className="header__form">
+      <form className="header__form" onSubmit={props.defaultPrevent}>
         <div className="header__searchWrapper">
           <input
             className="header__search"

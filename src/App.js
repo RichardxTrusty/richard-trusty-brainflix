@@ -1,11 +1,11 @@
-import "./App.scss";
+// import "./App.scss";
 import React, { useState } from "react";
-import Header from "./components /Header";
-import Video from "./components /Video";
-import VideoInfo from "./components /VideoInfo";
-import CommentForm from "./components /CommentForm";
-import Comments from "./components /Comments";
-import Gallery from "./components /Gallery";
+import Header from "./components/Header/Header";
+import Video from "./components/Video/Video";
+import VideoInfo from "./components/VideoInfo/VideoInfo";
+import CommentForm from "./components/CommentForm/CommentForm";
+import Comments from "./components/Comments/Comments";
+import Videolist from "./components/Videolist/Videolist";
 
 import data from "./data/video-details.json";
 import list from "./data/videos.json";
@@ -43,7 +43,7 @@ function App() {
           <Comments comments={appState.selectedData.comments} />
         </div>
 
-        <Gallery
+        <Videolist
           list={appState.list}
           selectedId={appState.selectedId}
           clickHandler={clickHandler}

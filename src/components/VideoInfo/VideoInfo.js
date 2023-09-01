@@ -1,5 +1,5 @@
-import views from "../assets/Icons/views.svg";
-import likes from "../assets/Icons/likes.svg";
+import views from "../../assets/Icons/views.svg";
+import likes from "../../assets/Icons/likes.svg";
 
 function VideoInfo(props) {
   return (

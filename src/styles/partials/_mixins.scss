@@ -1,5 +1,6 @@
-@use "./typogragrphy" as *;
-@use "./variable" as *;
+// importing typogrpahy w/@use feature:
+@use "./typography";
+@use "./variables" as *;
 
 @mixin font-properties($text-size, $line-height) {
   font-size: $text-size;
@@ -7,7 +8,7 @@
   @content;
 }
 
-// mixins for medi queries
+// mixins for media queries
 
 @mixin mobile-side-padding {
   padding: 0 16px;
@@ -19,7 +20,7 @@
   @content;
 }
 
-// setting logo  styles.
+// setting logo  styles
 
 @mixin logo-styling {
   max-height: 20px;
@@ -61,14 +62,14 @@
 // font face mixins
 
 @mixin font-family-normal {
-  font-family: "AvenirNextRegular";
+  font-family: "Avenir";
   font-weight: 400;
   font-style: normal;
   @content;
 }
 
-@mixin font-family-bolder {
-  font-family: "AvenirNextBold";
+@mixin font-family-bold {
+  font-family: "Avenir";
   font-weight: 700;
   font-style: normal;
   @content;
