@@ -1,5 +1,5 @@
 // importing typogrpahy w/@use feature:
-@use "./typography";
+@use "./typography" as *;
 @use "./variables" as *;
 
 @mixin font-properties($text-size, $line-height) {

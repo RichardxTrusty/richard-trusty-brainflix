@@ -1,3 +1,4 @@
+import "./CommentForm.scss";
 function CommentForm() {
   return (
     <form className="comments" action="submit">

@@ -1,6 +1,6 @@
 import views from "../../assets/Icons/views.svg";
 import likes from "../../assets/Icons/likes.svg";
-
+import "./VideoInfo.scss";
 function VideoInfo(props) {
   return (
     <div className="info">

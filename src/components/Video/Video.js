@@ -4,12 +4,13 @@ import "./Video.scss";
 function Video(props) {
   return (
     <div className="video">
-      <div className="video_container">
+      <div className="videvideo-thumbWrapper">
         <video
-          className="current__video"
-          width="450"
+          className="video__img"
+          width="470"
           height="255"
-          poster={props.content.image}></video>
+          poster={props.content.image}
+          controls></video>
       </div>
     </div>
   );
